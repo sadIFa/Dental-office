@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Stomatoloska ordinacija dr. Vahida Salkic</title>
+	<link rel="stylesheet" type="text/css" href="p5.css">
+	<script src="p5.js"></script>
+
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+      <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+
+</head>
+<body>
+	<a name="home"></a>
+      <div class="wrapper">
+ 
+     <nav class="nav">
+                  
+
+                  <ul id="menu">
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#aboutus">About us</a></li>
+  						<li><a href="#ourlocation">Our location</a></li>
+  						<li><a href="#workhrs">Working hours</a></li>
+  						<li><a href="#rewexp">Reviews & experiences</a></li>
+  						<li><a href="#contactus">Contact us</a></li>
+                  </ul>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+     <div id="resize">
+                  <div class="close-btn">close</div>
+     </div>
+
+
+	<br><br><br><br><h1>Stomatološka ordinacija</h1>
+	<h3>dr. Vahida Salkić</h3>
+	<img src="headerslika.jpg" class="slika" id="headerslika"><br><br><br><br>
+
+ 	<a name="aboutus"></a>
+ 	<section class="story">
+
+	<h2>About us:</h2>
+	<p id="parag">With a great love for dentistry, Dr.Vahida Salkić began her private practice in Breza in 2007, after working in public health care for several years before that. Concentrated on her vision of giving remarkable services in dentistry, the private dental practice quickly set off. Professional staff with decades of experience are ready to solve your dental problems and help your smile shine again. The team consists of dr. Vahida Salkić and her dental technicians that have 25 years of experience of dealing with different problems you might have or want to improve on. We will be there for our patients, from the yougest age to older ages. We pride ourselves with caring for our patients and listening to their expectations with great dedication to fulfill their demands. Our central goal is to provide affordable and excellent care for our patients and bring smiles back to their faces. </p><br>  </section>
+
+	<a name="ourlocation"></a>
+ 	<section class="loc">
+	<h2>Our location:</h2>
+	<a href="https://www.google.com/maps/place/Stomatolo%C5%A1ka+ordinacija+Vahida+dr+Salki%C4%87/@44.0224564,18.2649924,15z/data=!4m2!3m1!1s0x0:0xf3f27aa0e1468a59?sa=X&ved=2ahUKEwjzoNuI5ozuAhVo-ioKHUAeCIgQ_BIwCnoECBMQBQ" target="_blank"><img src="lokacija.jpg"  class="slika" ></a>
+
+	<h4>Address:  <span class="tab">Phone number:</h4>
+	<p id="kontaktinfo"> Stari most bb <span class="tab"> +38762179755</p>
+	<p id="kontaktinfo1"> <span class="tab">&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; &ensp; Breza 71370 <br> <span class="tab">&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; &ensp;&nbsp;Bosnia and Herzegovina <br></p><br></section>
+
+	<a name="workhrs"></a>
+ 	<section class="hours">	
+	<h4>&#128338; Working hours:</h4>
+	<p id="radnovrijeme">Moday:<span class="tab1"> &emsp;&emsp;11:00-19:30<br><br>Tuesday:<span class="tab1">  &nbsp;&emsp;11:00-19:30<br><br>Wednesday:<span class="tab1">11:00-19:30<br><br>Thursday:&emsp;<span class="tab1">11:00-19:30<br><br>Friday:&emsp;&emsp;&nbsp;<span class="tab1">11:00-19:30<br><br>Saturday:<span class="tab1">&emsp;&nbsp;closed<br><br>Sunday:<span class="tab1">&ensp;&ensp;&ensp;&nbsp;&nbsp;closed</p><br></section>
+	
+	<a name="rewexp"></a>
+ 	<section class="experience">
+	<h2>Reviews & experiences:</h2>
+	<p id="zvezdice">	&#128947;	&#128947;	&#128947;	&#128947;	&#128947; &ensp;</p> <p id="godinerew">2 years ago</p>
+	<p class="rew">"What can I say, other than all the best."</p>
+	<p class="imenarew">- Jasmin B.</p><br>
+
+	<p id="zvezdice">	&#128947;	&#128947;	&#128947;	&#128947;	&#128947; &ensp;</p><p id="godinerew">a year ago</p>
+	<p class="rew">"A great dentist service. I've fixed my teeth with the help of dr. Vahida and to say that I'm satisfied is an understatement. I've always had a phobia of dentists, but after her excellent work, I gladly go to the dentist. Very kind doctor and a great person all around."</p>
+	<p class="imenarew">- Aida A.</p><br>
+
+	<p id="zvezdice">	&#128947;	&#128947;	&#128947;	&#128947;	&#128947; &ensp;</p><p id="godinerew">2 years ago</p>
+	<p class="rew">"An dental practice. Everything is great."</p>
+	<p class="imenarew">- Goran L.</p><br><br></section>
+	
+<a name="contactus"></a>
+ 	<section class="kontakt">
+	<h2>Contact us:</h2>
+<p>Send an Email</p>
+<form class="contact-form" action="contactform.php" method="post">
+	<input type="text" name="name" placeholder="Your name">
+	<input type="text" name="mail" placeholder="Your email">
+	<input type="text" name="subject" placeholder="Subject">
+	<textarea  name="message" placeholder="Message"></textarea> 
+	<button type="submit" name="submit">SEND</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+	function sendEmail(){
+		var name=$("#name");
+		var email=$("#email");
+		var subject=$("#subject");
+		var body=$("#body");
+
+		if(isNotEmpty(name)&&isNotEmpty(email)&&isNotEmpty(subject)&&isNotEmpty(body)){
+			$.ajax({
+				url: 'sendEmail.php',
+				method: 'POST',
+				dataType: 'json',
+				data:{
+					name: name.val(),
+					email: email.val(),
+					subject: subject.val(),
+					body: body.val()					
+				}, success: function(response){
+					$('#myForm')[0].reset();
+					$('.sent-notification').text("Message sent successfully.");
+				}
+			});
+		}
+	}
+
+	function isNotEmpty(caller){
+		if(caller.val()==""){
+			caller.css('border','1px solid red');
+			return false;
+		}
+		else{
+			caller.css('border', '');
+			return true;
+		}
+	}
+
+</section>
+	
+//*// Select all links with hashes*/
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+</body>
+</html>
